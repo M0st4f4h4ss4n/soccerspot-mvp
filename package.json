@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/M0st4f4h4ss4n/soccerspot-mvp#readme",
   "dependencies": {
-    "express": "^4.18.4",
-    "in": "^3.1.0",
-    "mongoose": "^6.0.7"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "nodemon": "^1.18.10"
   }
 }
