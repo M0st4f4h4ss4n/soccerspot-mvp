@@ -8,7 +8,6 @@ const app = express();
 
 // Connect to the database
 logger('Connecting to the database...');
-database.connect();
 logger('Connected to the database!', 'success');
 
 // Serve static files from the React app
