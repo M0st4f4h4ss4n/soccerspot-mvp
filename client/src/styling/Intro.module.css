@@ -1,0 +1,61 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: var(--background-color);
+  background-image: url("../assets/splash.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* add text shadow for better readability */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* add a semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color : white;
+  animation: fadeIn 2s;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  animation: fadeIn 2s;
+  color : white;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color : white;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

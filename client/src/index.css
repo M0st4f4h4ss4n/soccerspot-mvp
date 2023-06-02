@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global styles */
+:root {
+  /* Colors */
+  --color-background: #f5f5f5; /* Consider changing this to a lighter shade of one of the new colors */
+  --color-text: #000000; /* Consider changing this to a darker shade of one of the new colors */
+  --color-primary: #FF5733; /* Primary color */
+  --color-secondary: #FFC300; /* Secondary color */
+  --color-success: #DAF7A6; /* Success color */
+  --color-danger: #C70039; /* Danger color */
+  --color-warning: #FFC300; /* Warning color */
+  --color-info: #581845; /* Info color */
+  --color-light: #f8f9fa; /* Light color */
+  --color-dark: #343a40; /* Dark color */
+
+  /* Fonts */
+  --font-family: 'Roboto', 'Open Sans', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 36px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Rest of your CSS... */
+
+* {
+  box-sizing: inherit;
 }
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: var(--font-size-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Container */
+.container {
+  min-height: 100vh; /* add this line to set a minimum height of the container */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-height: 100vh; /* add this line to set a minimum height of the container */
+    padding: 0;
+  }
+}
+

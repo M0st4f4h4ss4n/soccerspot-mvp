@@ -1,0 +1,36 @@
+{
+  "courts": [
+    {
+      "id": 1,
+      "name": "Court 1",
+      "description": "Description of Court 1"
+    },
+    {
+      "id": 2,
+      "name": "Court 2",
+      "description": "Description of Court 2"
+    },
+    {
+      "id": 3,
+      "name": "Court 3",
+      "description": "Description of Court 3"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Service 1",
+      "description": "Description of Service 1"
+    },
+    {
+      "id": 2,
+      "name": "Service 2",
+      "description": "Description of Service 2"
+    },
+    {
+      "id": 3,
+      "name": "Service 3",
+      "description": "Description of Service 3"
+    }
+  ]
+}

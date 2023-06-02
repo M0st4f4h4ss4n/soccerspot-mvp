@@ -1,0 +1,129 @@
+:root {
+  --icon-size: 40px;
+  --transition-speed: 0.3s;
+  /* ...other variables... */
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 1rem;
+  transition: color var(--transition-speed);
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.icon.active {
+  color: var(--color-primary);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.navbar {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  display: inline-block;
+  height: var(--icon-size);
+  padding: 0 10px;
+  max-width: calc(100% - 80px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color var(--transition-speed);
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: border-color var(--transition-speed);
+  z-index: -1;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.link:hover::before {
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .brand {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .link {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+@media (min-width:1200px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+
+  .brand {
+    font-size: 2rem;
+  }
+
+  .link {
+    margin-left: 2.5rem;
+    font-size: 1.25rem;
+  }
+}

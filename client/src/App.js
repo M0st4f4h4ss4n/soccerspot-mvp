@@ -1,25 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Intro from './components/Intro';
+import Features from './components/Features';
+import About from './components/About';
 import './App.css';
 
 function App() {
-  const [message, setMessage] = useState('');
+  const [currentComponent, setCurrentComponent] = useState('Intro');
 
-  useEffect(() => {
-    fetch('/api/hello')
-      .then(res => res.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.log(err));
-  }, []);
+  const handleComponentChange = (componentName) => {
+    setCurrentComponent(componentName);
+  };
+
+  let currentContent;
+  switch (currentComponent) {
+    case 'Intro':
+      currentContent = <Intro />;
+      break;
+    case 'Features':
+      currentContent = <Features />;
+      break;
+    case 'About':
+      currentContent = <About />;
+      break;
+    default:
+      currentContent = <Intro />;
+  }
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {message}
-        </p>
-      </header>
+      <Header onComponentChange={handleComponentChange} />
+      {currentContent}
     </div>
   );
 }
