@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b317757d.css",
+    "main.js": "/static/js/main.c0101941.js",
+    "static/media/about.png": "/static/media/about.f386bf3d7cafa5add120.png",
+    "static/media/splash.png": "/static/media/splash.cf2b26eb93109674ab2c.png",
+    "static/media/features.png": "/static/media/features.3e989cb534531b289e74.png",
+    "static/media/icons8-about.gif": "/static/media/icons8-about.50982de864a9afe0a016.gif",
+    "static/media/icons8-soccer-200.svg": "/static/media/icons8-soccer-200.ee8a49ab7e48d909b442a98b9585b933.svg",
+    "index.html": "/index.html",
+    "main.b317757d.css.map": "/static/css/main.b317757d.css.map",
+    "main.c0101941.js.map": "/static/js/main.c0101941.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b317757d.css",
+    "static/js/main.c0101941.js"
+  ]
+}
