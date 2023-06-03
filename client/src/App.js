@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Features from './components/Features';
 import About from './components/About';
+import { Footer } from './components/Footer';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <div className="App">
       <Header onComponentChange={handleComponentChange} />
       {currentContent}
+      <Footer onComponentChange={handleComponentChange} /> {/* add the Footer component */}
     </div>
   );
 }

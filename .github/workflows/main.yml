@@ -25,3 +25,19 @@ jobs:
     - name: git pull 
       working-directory: /home/ubuntu/soccerspot-mvp
       run: git pull
+
+    - name: npm i in frontend
+      working-directory: /home/ubuntu/soccerspot-mvp/client
+      run: npm i
+
+    - name: npm i in backend
+      working-directory: /home/ubuntu/soccerspot-mvp
+      run: npm i
+      
+    - name: run build front end
+      working-directory: /home/ubuntu/soccerspot-mvp/client
+      run: npm run build
+
+    - name: pm2 restart server
+      working-directory: /home/ubuntu/soccerspot-mvp
+      run: pm2 restart index.js --force
