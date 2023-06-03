@@ -4,21 +4,18 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  font-family: var(--font-family);
-  font-size: var(--font-size-md);
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
   text-align: center;
 }
 
 .footer.dark {
-  background-color: var(--color-dark);
+  background-color: #fff;
+  color: #222;
 }
 
-.footer.light {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
 
 .footerLinks {
   display: flex;
@@ -29,14 +26,14 @@
 
 .link {
   margin: 0 20px;
-  color: var(--color-light);
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .link:hover {
-  color: var(--color-primary);
+  color: #00BCD4;
 }
 
 .socialMediaLinks {
@@ -48,12 +45,12 @@
 .socialIcon {
   font-size: 24px;
   margin: 0 10px;
-  color: var(--color-light);
+  color: #fff;
   transition: all 0.3s ease;
 }
 
 .socialIcon:hover {
-  color: var(--color-primary);
+  color: #00BCD4;
 }
 
 .newsletterForm {
@@ -64,34 +61,34 @@
 
 input[type='email'] {
   padding: 10px;
-  border: 2px solid var(--color-light);
+  border: 2px solid #fff;
   border-radius: 5px 0 0 5px;
   font-size: 16px;
   width: 300px;
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: #222;
+  color: #fff;
   transition: border-color 0.3s ease;
 }
 
 input[type='email']:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: #00BCD4;
 }
 
 button[type='submit'] {
   padding: 10px 20px;
   border: none;
   border-radius: 0 5px 5px 0;
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: #00BCD4;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button[type='submit']:hover {
-  background-color: var(--color-light);
-  color: var(--color-primary);
+  background-color: #fff;
+  color: #00BCD4;
 }
 
 .footerText {
@@ -103,7 +100,7 @@ button[type='submit']:hover {
 .footerText p {
   margin: 0;
   margin-bottom: 10px;
-  color: var(--color-light);
+  color: #fff;
   font-size: 14px;
 }
 
@@ -116,7 +113,7 @@ button[type='submit']:hover {
 
 @media (max-width: 767px) {
   .footer {
-    font-size: var(--font-size-sm);
+    font-size: 12px;
   }
 
   .footerLinks {
@@ -158,3 +155,4 @@ button[type='submit']:hover {
     font-size: var(--font-size-xl);
   }
 }
+

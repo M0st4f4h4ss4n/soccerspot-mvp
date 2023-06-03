@@ -43,7 +43,7 @@ export function Footer({ isDarkTheme, onComponentChange }) {
           <input type="email" placeholder="Enter your email" />
           <button type="submit">Subscribe</button>
         </form>
-        <p>&copy; 2021 Soccer App</p>
+        <p>&copy; 2023 Soccer Spot</p>
       </div>
     </footer>
   );

@@ -9,6 +9,8 @@
   height: var(--icon-size);
   margin-right: 1rem;
   transition: color var(--transition-speed);
+  margin-top: -2px;
+
 }
 
 .icon:hover {
@@ -28,7 +30,7 @@
 }
 
 .navbar {
-  width: 100%;
+  width: 95%;
   left: 0;
   right: 0;
   padding: 1rem 2rem;
@@ -39,9 +41,9 @@
 }
 
 .logo {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  margin-right: 1rem;
+  width: 60px;
+  height: 60px;
+  margin-right: 0;
 }
 
 .brand {
@@ -55,7 +57,7 @@
 }
 
 .link {
-  margin-left: 2rem;
+  margin-left: 0;
   font-size: 1rem;
   color: var(--color-text);
   text-decoration: none;
@@ -64,7 +66,7 @@
   display: inline-block;
   height: var(--icon-size);
   padding: 0 10px;
-  max-width: calc(100% - 80px);
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
