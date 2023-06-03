@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
-
+/* Replace existing CSS styles with these styles */
 
 :root {
   --icon-size: 40px;
   --transition-speed: 0.5s;
   --color-primary: #1a237e; /* Dark Imperial Blue */
   --color-secondary: #4caf50; /* Emerald Green */
-  --color-text: #fafafa; /* White */
+  --color-text: #000000; /* White */
 }
 
 .icon {
@@ -16,7 +15,7 @@
   transition: color var(--transition-speed);
   margin-top: -2px;
 }
- 
+
 .icon:hover {
   cursor: pointer;
   color: var(--color-primary);
@@ -34,7 +33,7 @@
 }
 
 .navbar {
-  width: 100%;
+  width: 90%;
   left: 0;
   right: 0;
   padding: 2rem 3rem;
@@ -42,7 +41,7 @@
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Amiri', serif; /* Arabic font */
@@ -57,7 +56,7 @@
 .brand {
   display: flex;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -66,7 +65,7 @@
 
 .link {
   margin-left: 0;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--color-text);
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -110,6 +109,8 @@
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .brand {
@@ -129,9 +130,13 @@
     max-height: 1vrem;
     min-height: 1vrem;
   }
+
+  .languageTogglerContainer {
+    margin-top: 1rem;
+  }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .navbar {
     padding: 1.5rem 3rem;
   }
@@ -144,11 +149,20 @@
     margin-left: 2.5rem;
     font-size: 1.25rem;
   }
+
+  .languageTogglerContainer {
+    margin-left: 2.5rem;
+  }
+}
+
+.languageTogglerContainer {
+  display: flex;
+  align-items: center;
 }
 
 .languageToggler {
-  margin-left: auto;
-  display: flex;
+  position: relative;
+  display: inline-block;
   align-items: center;
   font-size: 1.25rem;
   color: #555;
@@ -162,6 +176,29 @@
 .languageToggler.active {
   color: var(--color-primary);
 }
-.el {
-  transform: translate(100px) var(--transform, );
+
+/* Additional styles for Arabic language */
+
+body[data-language='ar'] {
+  font-family: 'Amiri', serif;
+}
+
+.link {
+  border: 2px solid var(--color-secondary);
+}
+
+.link::before {
+  border: 2px solid var(--color-secondary);
+}
+
+.link:hover {
+  color: var(--color-secondary);
+}
+
+.link:hover::before {
+  border-color: var(--color-secondary);
+}
+
+.languageToggler.active {
+  color: var(--color-secondary);
 }
