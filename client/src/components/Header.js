@@ -9,7 +9,10 @@ import logo from '../assets/icons8-soccer-200.svg';
 import bookIcon from '../assets/icons8-soccer-128.png';
 import { useTranslation } from 'react-i18next';
 import LanguageToggler from './LanguageToggler';
+
 export function Header({ isDarkTheme, onComponentChange }) {
+  const { t } = useTranslation();
+
   const handleLinkClick = (event, componentName) => {
     event.preventDefault();
     onComponentChange(componentName);
@@ -25,7 +28,7 @@ export function Header({ isDarkTheme, onComponentChange }) {
       >
         <Navbar.Brand href="#home" className={styles.brand}>
           <img src={logo} alt="logo" className={styles.logo} />
-          SoccerSpot
+          {t('header.brand')}
         </Navbar.Brand>
         <Nav className={styles.navLinks}>
           <Nav.Link 
@@ -35,7 +38,7 @@ export function Header({ isDarkTheme, onComponentChange }) {
             aria-label="Home"
           >
             <img src={homeIcon} alt="home" className={styles.icon} />
-            Home
+            {t('header.home')}
           </Nav.Link>
           <Nav.Link 
             href="#features" 
@@ -44,7 +47,7 @@ export function Header({ isDarkTheme, onComponentChange }) {
             aria-label="Features"
           >
             <img src={featuresIcon} alt="features" className={styles.icon} />
-            Features
+            {t('header.features')}
           </Nav.Link>
           <Nav.Link 
             href="#about" 
@@ -53,7 +56,7 @@ export function Header({ isDarkTheme, onComponentChange }) {
             aria-label="About"
           >
             <img src={aboutIcon} alt="about" className={styles.icon} />
-            About
+            {t('header.about')}
           </Nav.Link>
           <Nav.Link 
             href="#book" 
@@ -62,7 +65,7 @@ export function Header({ isDarkTheme, onComponentChange }) {
             aria-label="Book Now"
           >
             <img src={bookIcon} alt="book" className={styles.icon} />
-            Book Now
+            {t('header.bookNow')}
           </Nav.Link>
         </Nav>
         <div className={`ml-auto ${styles.languageToggler}`}>
@@ -84,11 +87,3 @@ Header.defaultProps = {
 };
 
 export default Header;
-export { Header as HeaderComponent };
-export const HeaderPropTypes = {
-  isDarkTheme: PropTypes.bool,
-  onComponentChange: PropTypes.func.isRequired,
-};
-export const HeaderDefaultProps = {
-  isDarkTheme: false,
-};
