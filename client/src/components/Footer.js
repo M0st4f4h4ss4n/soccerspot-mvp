@@ -1,10 +1,7 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import homeIcon from '../assets/icons8-home-50.png';
-import featuresIcon from '../assets/icons8-features-64.png';
-import aboutIcon from '../assets/icons8-about.gif';
-import bookIcon from '../assets/icons8-soccer-128.png';
 import styles from '../styling/footer.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer({ isDarkTheme, onComponentChange }) {
   const handleLinkClick = (event, componentName) => {
@@ -13,74 +10,41 @@ export function Footer({ isDarkTheme, onComponentChange }) {
   };
 
   return (
-    <Navbar 
-      bg="light"
-      variant={isDarkTheme ? "dark" : "light"}
-      fixed="bottom"
-      className={`${styles.navbar}`}
-    >
-      <Nav className="mx-auto">
-        <Nav.Link 
-          href="#intro" 
-          onClick={(event) => handleLinkClick(event, 'Intro')} 
-          className={styles.link} 
-          aria-label="Home"
-        >
-          <img src={homeIcon} alt="home" className={styles.icon} />
+    <footer className={`${styles.footer} ${isDarkTheme ? styles.dark : styles.light}`}>
+      <div className={styles.footerLinks}>
+        <a href="#intro" onClick={(event) => handleLinkClick(event, 'Intro')} className={styles.link}>
           Home
-        </Nav.Link>
-        <Nav.Link 
-          href="#features" 
-          onClick={(event) => handleLinkClick(event, 'Features')} 
-          className={styles.link}
-          aria-label="Features"
-        >
-          <img src={featuresIcon} alt="features" className={styles.icon} />
+        </a>
+        <a href="#features" onClick={(event) => handleLinkClick(event, 'Features')} className={styles.link}>
           Features
-        </Nav.Link>
-        <Nav.Link 
-          href="#about" 
-          onClick={(event) => handleLinkClick(event, 'About')} 
-          className={styles.link}
-          aria-label="About"
-        >
-          <img src={aboutIcon} alt="about" className={styles.icon} />
+        </a>
+        <a href="#about" onClick={(event) => handleLinkClick(event, 'About')} className={styles.link}>
           About
-        </Nav.Link>
-        <Nav.Link 
-          href="#book" 
-          onClick={(event) => handleLinkClick(event, 'Book')} 
-          className={styles.link}
-          aria-label="Book Now"
-        >
-          <img src={bookIcon} alt="book" className={styles.icon} />
+        </a>
+        <a href="#book" onClick={(event) => handleLinkClick(event, 'Book')} className={styles.link}>
           Book Now
-        </Nav.Link>
-        <Nav.Link 
-          href="#contact" 
-          onClick={(event) => handleLinkClick(event, 'Contact')} 
-          className={styles.link}
-          aria-label="Contact Us"
-        >
-          Contact Us
-        </Nav.Link>
-        <Nav.Link 
-          href="#faq" 
-          onClick={(event) => handleLinkClick(event, 'FAQ')} 
-          className={styles.link}
-          aria-label="FAQ"
-        >
-          FAQ
-        </Nav.Link>
-        <Nav.Link 
-          href="#terms" 
-          onClick={(event) => handleLinkClick(event, 'Terms')} 
-          className={styles.link}
-          aria-label="Terms and Conditions"
-        >
-          Terms and Conditions
-        </Nav.Link>
-      </Nav>
-    </Navbar>
+        </a>
+      </div>
+      <div className={styles.footerText}>
+        <p>Follow us on social media:</p>
+        <div className={styles.socialMediaLinks}>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookF} className={styles.socialIcon} />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className={styles.socialIcon} />
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} className={styles.socialIcon} />
+          </a>
+        </div>
+        <p>Subscribe to our newsletter:</p>
+        <form className={styles.newsletterForm}>
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2021 Soccer App</p>
+      </div>
+    </footer>
   );
 }
