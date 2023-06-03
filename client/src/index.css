@@ -1,17 +1,15 @@
 /* Global styles */
 :root {
   /* Colors */
-  --color-background: #f5f5f5; /* Consider changing this to a lighter shade of one of the new colors */
-  --color-text: #000000; /* Consider changing this to a darker shade of one of the new colors */
-  --color-primary: #FF5733; /* Primary color */
-  --color-secondary: #FFC300; /* Secondary color */
-  --color-success: #DAF7A6; /* Success color */
-  --color-danger: #C70039; /* Danger color */
-  --color-warning: #FFC300; /* Warning color */
-  --color-info: #581845; /* Info color */
-  --color-light: #f8f9fa; /* Light color */
-  --color-dark: #343a40; /* Dark color */
-
+  :root {
+    --color-primary: #FF5733;
+    --color-secondary: #FFC300;
+    --color-text: #ffffff;
+    --color-background: #1a1a1a;
+    --color-border: #222;
+    --transition-speed: 0.3s;
+    --icon-size: 40px;
+  }
   /* Fonts */
   --font-family: 'Roboto', 'Open Sans', sans-serif;
   --font-size-xs: 12px;
