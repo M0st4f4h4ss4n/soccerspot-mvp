@@ -2,19 +2,19 @@
 :root {
   /* Colors */
   :root {
-    --color-primary: #FF5733;
-    --color-secondary: #FFC300;
+    --color-primary: #0000FF;
+    --color-secondary: #00FFFF;
     --color-text: #ffffff;
     --color-background: #1a1a1a;
     --color-border: #222;
-    --transition-speed: 0.3s;
+    --transition-speed: 0.5s;
     --icon-size: 40px;
   }
   /* Fonts */
   --font-family: 'Roboto', 'Open Sans', sans-serif;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
-  --font-size-md: 16px;
+  --font-size-md: 18px;
   --font-size-lg: 18px;
   --font-size-xl: 24px;
   --font-size-xxl: 36px;
