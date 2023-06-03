@@ -28,6 +28,20 @@
         "subscribe": "Subscribe to our newsletter:",
         "enterEmail": "Enter your email",
         "subscribeBtn": "Subscribe"
+      },
+      "intro": {
+        "title": "Welcome to SoccerSpot",
+        "description": "The best place to book your next soccer game.",
+        "bookNow": "Book Now"
       }
+      ,
+        "header": {
+          "brand": "SoccerSpot",
+          "home": "Home",
+          "features": "Features",
+          "about": "About",
+          "bookNow": "Book Now"
+        }
+      
   }
   
