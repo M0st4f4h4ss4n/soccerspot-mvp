@@ -56,6 +56,30 @@ export function Footer({ isDarkTheme, onComponentChange }) {
           <img src={bookIcon} alt="book" className={styles.icon} />
           Book Now
         </Nav.Link>
+        <Nav.Link 
+          href="#contact" 
+          onClick={(event) => handleLinkClick(event, 'Contact')} 
+          className={styles.link}
+          aria-label="Contact Us"
+        >
+          Contact Us
+        </Nav.Link>
+        <Nav.Link 
+          href="#faq" 
+          onClick={(event) => handleLinkClick(event, 'FAQ')} 
+          className={styles.link}
+          aria-label="FAQ"
+        >
+          FAQ
+        </Nav.Link>
+        <Nav.Link 
+          href="#terms" 
+          onClick={(event) => handleLinkClick(event, 'Terms')} 
+          className={styles.link}
+          aria-label="Terms and Conditions"
+        >
+          Terms and Conditions
+        </Nav.Link>
       </Nav>
     </Navbar>
   );
