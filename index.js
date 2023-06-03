@@ -6,10 +6,6 @@ const { info, error } = require('./src/logger');
 
 const app = express();
 
-// Connect to the database
-database.connect()
-  .then(() => info('Connected to the database!', 'success'))
-  .catch((error) => error(`Error connecting to the database: ${error}`, 'error'));
 
 // Serve static files from the React app
 info('Serving static files from the React app...');
@@ -28,5 +24,5 @@ app.get('*', (req, res) => {
 });
 info('React app served!', 'success');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => info(`Server running on port ${port}...`, 'success'));
