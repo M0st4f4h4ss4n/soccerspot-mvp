@@ -18,14 +18,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5); /* add a semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.7); /* add a semi-transparent overlay */
   padding: 20px;
   border-radius: 10px;
 }
 
 .title {
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
   color : white;
@@ -34,7 +34,7 @@
 
 .description {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   animation: fadeIn 2s;
   color : white;
