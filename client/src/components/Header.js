@@ -22,7 +22,6 @@ export function Header({ isDarkTheme, onComponentChange }) {
     <div className={styles.container}>
       <Navbar 
         bg="light"
-        variant={isDarkTheme ? "dark" : "light"}
         fixed="top"
         className={`${styles.navbar}`}
       >
@@ -31,15 +30,14 @@ export function Header({ isDarkTheme, onComponentChange }) {
           {t('header.brand')}
         </Navbar.Brand>
         <Nav className={styles.navLinks}>
-          <Nav.Link 
-            href="#intro" 
-            onClick={(event) => handleLinkClick(event, 'Intro')} 
-            className={styles.link} 
-            aria-label="Home"
-          >
-            <img src={homeIcon} alt="home" className={styles.icon} />
-            {t('header.home')}
-          </Nav.Link>
+        <Nav.Link 
+    href="#intro" 
+    onClick={(event) => handleLinkClick(event, 'Intro')} 
+    className={styles.link} 
+    aria-label="Home">
+        <img src={homeIcon} alt="home" className={styles.icon} />{t('header.home')}
+    
+</Nav.Link>
           <Nav.Link 
             href="#features" 
             onClick={(event) => handleLinkClick(event, 'Features')} 

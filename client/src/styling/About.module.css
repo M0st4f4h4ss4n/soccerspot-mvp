@@ -34,19 +34,22 @@
   text-align: center;
   max-width: 800px;
   color: white;
+  animation: fadeIn 2s;
 }
 
 .title {
   margin-bottom: 20px;
   font-size: 48px;
-  font-weight: bold;
-  animation: fadeIn 2s;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Amiri', serif; /* Arabic font */
 }
 
 .description {
   margin-bottom: 20px;
   font-size: 24px;
-  animation: fadeIn 2s;
+  font-family: 'Amiri', serif; /* Arabic font */
 }
 
 .button {
@@ -56,11 +59,13 @@
   border: none;
   cursor: pointer;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 30px;
 }
 
 .button:hover {
   background-color: var(--secondary-color);
+  transform: scale(1.1);
 }
 
 @keyframes fadeIn {
