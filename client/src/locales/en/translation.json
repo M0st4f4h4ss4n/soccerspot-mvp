@@ -1,0 +1,33 @@
+{
+    "about": {
+      "title": "About Us",
+      "description": "SoccerSpot is the best place to book your next soccer game. We provide a simple and easy-to-use platform for players to find and book soccer fields in their area. Our mission is to make it easy for everyone to play soccer, anytime and anywhere.",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Key Features",
+      "booking": {
+        "title": "Easy Booking",
+        "description": "Find and book your next game with just a few clicks."
+      },
+      "localGames": {
+        "title": "Local Games",
+        "description": "Discover games happening in your local area."
+      },
+      "connect": {
+        "title": "Connect with Players",
+        "description": "Connect with other players, form teams, and enjoy the game."
+      }
+    },
+    "footer": {
+        "home": "Home",
+        "features": "Features",
+        "about": "About",
+        "bookNow": "Book Now",
+        "followUs": "Follow us on social media:",
+        "subscribe": "Subscribe to our newsletter:",
+        "enterEmail": "Enter your email",
+        "subscribeBtn": "Subscribe"
+      }
+  }
+  

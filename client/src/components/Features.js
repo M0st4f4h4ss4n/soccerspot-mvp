@@ -1,24 +1,25 @@
-// components/Features.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from '../styling/features.module.css';
-import featuresImage from '../assets/features.png'; // import the image
 
 function Features() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.features} id="features">
       <div className={styles.container}>
-        <h2 className={styles.title}>Key Features</h2>
+        <h2 className={styles.title}>{t('features.title')}</h2>
         <div className={styles.feature}>
-          <h3>Easy Booking</h3>
-          <p>Find and book your next game with just a few clicks.</p>
+          <h3>{t('features.booking.title')}</h3>
+          <p>{t('features.booking.description')}</p>
         </div>
         <div className={styles.feature}>
-          <h3>Local Games</h3>
-          <p>Discover games happening in your local area.</p>
+          <h3>{t('features.localGames.title')}</h3>
+          <p>{t('features.localGames.description')}</p>
         </div>
         <div className={styles.feature}>
-          <h3>Connect with Players</h3>
-          <p>Connect with other players, form teams, and enjoy the game.</p>
+          <h3>{t('features.connect.title')}</h3>
+          <p>{t('features.connect.description')}</p>
         </div>
       </div>
     </section>

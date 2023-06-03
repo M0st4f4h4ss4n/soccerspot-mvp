@@ -38,6 +38,9 @@
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -128,4 +131,20 @@
     margin-left: 2.5rem;
     font-size: 1.25rem;
   }
+}
+.languageToggler {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.languageToggler:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.languageToggler.active {
+  color: var(--color-primary);
 }
