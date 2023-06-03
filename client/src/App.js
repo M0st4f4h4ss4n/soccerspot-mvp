@@ -38,7 +38,6 @@ function App() {
         <Header onComponentChange={handleComponentChange} />
         {currentContent}
         <Footer onComponentChange={handleComponentChange} />
-        <div>{t('learnMore')}</div>
       </div>
     </I18nextProvider>
   );
