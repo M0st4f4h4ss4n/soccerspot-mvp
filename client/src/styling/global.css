@@ -8,3 +8,18 @@ body {
 .arabic {
   font-family: 'Amiri', serif;
 }
+* {
+  transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+  transform: scale(1.02);
+}
+
+body {
+  font-size: 16px;
+}
+
+.arabic {
+  font-size: 18px;
+}
